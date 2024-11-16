@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.conF:hover> .btF {
+    right: 55px !important;
+}
+
+.conF:hover>.inF{
+    width: 15rem;
+}
+
+*{
+    transition: all 150ms ease-in-out;
+}
+
+@keyframes pop {
+    0% {
+        
+        scale: 95%;
+    }
+
+
+    50%{
+        scale: 90%;
+    }
+
+    100%{
+        scale: 100%;
+    }
+}
+
+.ulS>li>ul {
+    display: none;
+}
+.ulS>li>section {
+    display: none;
+}
+.ulS>li:hover>ul{
+    display: block;
+    animation: pop 300ms ease-in-out!important;
+}
+.ulS>li:hover>section{
+    display: flex;
+    animation: pop 300ms ease-in-out!important;
+}
+.MegaUl>ul>li {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    padding: 0.18rem;
+    
+}
+
+.MegaUl>ul>li:hover {
+    background-color: rgb(24 31 57)
+}
